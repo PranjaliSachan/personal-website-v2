@@ -104,6 +104,7 @@ b, strong {
   margin-top: 5px;
   min-width: 260px;
   position: relative;
+  width: 100% !important;
 }
 
 .animated-item {
@@ -121,6 +122,7 @@ b, strong {
   right: 0;
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
+  text-wrap: nowrap;
 }
 .animated-item:nth-child(2n+2) {
   animation-delay: 2s;
@@ -356,6 +358,11 @@ b, strong {
   vertical-align: middle;
   /* margin-left: 15px; */
   margin-bottom: 15px;
+}
+.timeline-info a {
+  color: #474559;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .owl-carousel .owl-nav span {
