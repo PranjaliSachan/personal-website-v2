@@ -237,7 +237,7 @@
           <div class="contact-form">
             <h2 class="mb-4">Hire me? Let's talk</h2>
 
-            <form name="contact-form-netlify" netlify>
+            <form name="contact-form-netlify" method="POST" data-netlify="true">
               <div class="row">
                 <div class="col-lg-6 col-12">
                   <input id="name" type="text" class="form-control" name="name" placeholder="Your Name" id="name">
@@ -253,7 +253,7 @@
                 </div>
 
                 <div class="ml-lg-auto col-lg-5 col-12">
-                  <input type="button" class="form-control submit-btn" value="Send">
+                  <button type="submit" class="form-control submit-btn">Send</button>
                 </div>
               </div>
             </form>
