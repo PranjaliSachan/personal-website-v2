@@ -547,6 +547,18 @@ strong {
   vertical-align: middle;
 }
 
+.item a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.item a:hover {
+  text-decoration: underline !important;
+}
+
+.item a h4 {
+  margin-bottom: 18px;
+}
+
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
     position: relative;
