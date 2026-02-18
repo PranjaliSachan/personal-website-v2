@@ -667,3 +667,35 @@ strong {
     vertical-align: top;
   }
 }
+
+
+/* Live Websites section */
+.live-site-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.live-site-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+}
+
+.live-site-thumb {
+  background: #f7f7f7;
+}
+
+.live-site-thumb img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.live-site-body {
+  padding: 18px 18px 22px;
+  text-align: left;
+}
