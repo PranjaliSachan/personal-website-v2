@@ -668,7 +668,6 @@ strong {
   }
 }
 
-
 /* Live Websites section */
 .live-site-card {
   background: #fff;
@@ -677,6 +676,11 @@ strong {
   border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   transition: transform 180ms ease, box-shadow 180ms ease;
+
+  /* ✅ makes layout consistent */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .live-site-card:hover {
@@ -684,18 +688,32 @@ strong {
   box-shadow: 0 14px 40px rgba(0,0,0,0.08);
 }
 
+/* ✅ fixed height crop area */
 .live-site-thumb {
   background: #f7f7f7;
+  height: 260px;           /* adjust 220–300 if you want */
+  overflow: hidden;
 }
 
+/* ✅ show the TOP of the page screenshot */
 .live-site-thumb img {
   width: 100%;
-  height: 260px;
+  height: 100%;
   object-fit: cover;
+  object-position: top center; /* ✅ THIS is the main fix */
   display: block;
 }
 
 .live-site-body {
   padding: 18px 18px 22px;
   text-align: left;
+
+  /* ✅ keeps button aligned at bottom */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.live-site-body .btn {
+  margin-top: auto;
 }
