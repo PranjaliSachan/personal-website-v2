@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -74,49 +75,36 @@
 
   <!-- about -->
   <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <div class="row">
 
         <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-          <div class="about-text">
-            <small class="small-text">Welcome to <span class="mobile-block">my website!</span></small>
+          <div class="about-text" data-aos="fade-right" data-aos-delay="200">
+            <small class="small-text">Available for new projects</small>
             <h1 class="animated animated-text">
-              <span class="mr-1">Hey folks, I'm</span>
+              <span class="mr-1">I'm</span>
               <div class="animated-info">
                 <span class="animated-item">Pranjali</span>
-                <span class="animated-item">a Web Developer</span>
-                <span class="animated-item">a UI/UX Enthusiast</span>
+                <span class="animated-item">WordPress Expert</span>
+                <span class="animated-item">Full Stack Dev</span>
               </div>
             </h1>
 
-            <p class="mt-3">
-              I am a full stack web developer with over five years of experience building scalable, high performance
-              websites and web applications. I specialize in custom WordPress development, Webflow builds, and Shopify
-              theme engineering, focusing on clean architecture, flexible CMS structures, and conversion driven user
-              experiences.
-              <br><br>
-              My expertise includes custom theme development, ACF powered content architecture, WooCommerce
-              implementations, Shopify Liquid customization, and advanced frontend engineering using React, Next.js,
-              HTML5, CSS3, and Tailwind CSS. I work extensively with PHP, JavaScript ES6+, REST APIs, MySQL, and modern
-              deployment workflows.
-              <br><br>
-              Alongside development, I handle technical SEO, Core Web Vitals optimization, structured data, performance
-              tuning, and analytics integrations to ensure sites are fast, secure, and search optimized. I approach
-              every project with a focus on maintainability, scalability, and long term performance.
+            <p class="mt-4 mb-5">
+              I build high-performance WordPress sites and custom web applications. From custom theme development to Core Web Vitals optimization, I help brands create digital experiences that scale.
             </p>
 
-            <div class="custom-btn-group mt-4">
-              <a href="files/Pranjali-Sachan-Resume.pdf" target="_blank" rel="noopener" class="btn mr-lg-2 custom-btn">
-                <i class="bi bi-download"></i> Download Resume
+            <div class="custom-btn-group">
+              <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link py-3 px-5">Get in Touch</a>
+              <a href="files/Pranjali-Sachan-Resume.pdf" target="_blank" rel="noopener" class="btn ml-3 custom-btn py-3">
+                <i class="bi bi-download mr-2"></i> Resume
               </a>
-
-              <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get in Touch</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-5 col-md-12 col-12">
-          <div class="about-image svg">
+          <div class="about-image svg" data-aos="fade-left" data-aos-delay="400">
             <img src="images/undraw/undraw_software_engineer_lvl5.svg" class="img-fluid" alt="svg image">
           </div>
         </div>
@@ -126,76 +114,104 @@
   </section>
 
   <!-- ✅ Live Websites Delivered -->
-  <section class="live-websites py-5" id="live-websites">
-    <div class="container">
+  <section class="live-websites py-5 creative-skew" id="live-websites">
+    <div class="container py-5">
       <div class="row">
         <div class="col-lg-11 text-center mx-auto col-12">
 
-          <div class="col-lg-8 mx-auto mb-5">
-            <h2>Live Websites Delivered</h2>
-            <p class="text-muted mb-0">A few end-to-end builds you can explore live.</p>
+          <div class="col-lg-8 mx-auto mb-5 section-header">
+            <h2 class="mb-4">Recently Delivered Projects</h2>
+            <p class="text-muted mb-0">High-performance custom builds, optimized for results and speed.</p>
           </div>
 
           <div class="row">
 
             <!-- Card 1 -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="live-site-card h-100">
+            <div class="col-lg-6 col-12 mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="live-site-card">
                 <div class="live-site-thumb">
                   <img src="images/project/Quimby-Home.png" alt="Quimby Digital website preview" class="img-fluid" loading="lazy" decoding="async">
                 </div>
 
                 <div class="live-site-body">
-                  <h5 class="mb-1">Quimby Digital</h5>
-                  <small class="text-muted d-block mb-3">WordPress / Custom Theme</small>
-
+                  <small class="text-muted d-block mb-2">WordPress / Custom Theme</small>
+                  <h5 class="mb-3">Quimby Digital</h5>
+                  <p class="small text-muted mb-4" style="font-size: 0.95rem;">High-performance digital agency platform with advanced CMS architecture and optimized conversion paths.</p>
                   <a href="https://quimbydigital.com/" target="_blank" rel="noopener"
-                    class="btn custom-btn custom-btn-bg custom-btn-link">
-                    See Live Website
+                    class="btn custom-btn">
+                    Explore Project <i class="bi bi-arrow-right ml-2"></i>
                   </a>
                 </div>
               </div>
             </div>
 
             <!-- Card 2 -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="live-site-card h-100">
+            <div class="col-lg-6 col-12 mb-5" data-aos="fade-up" data-aos-delay="300">
+              <div class="live-site-card">
                 <div class="live-site-thumb">
                   <img src="images/project/OneTribe-Home.png" alt="OneTribe website preview" class="img-fluid" loading="lazy" decoding="async">
                 </div>
 
                 <div class="live-site-body">
-                  <h5 class="mb-1">OneTribe</h5>
-                  <small class="text-muted d-block mb-3">WordPress / Custom Theme</small>
-
+                  <small class="text-muted d-block mb-2">WordPress / Custom Theme</small>
+                  <h5 class="mb-3">OneTribe</h5>
+                  <p class="small text-muted mb-4" style="font-size: 0.95rem;">A scalable community platform built with custom member portals, integrated workflows, and modern UI.</p>
                   <a href="https://app.onetribe.team/" target="_blank" rel="noopener"
-                    class="btn custom-btn custom-btn-bg custom-btn-link">
-                    See Live Website
+                    class="btn custom-btn">
+                    Explore Project <i class="bi bi-arrow-right ml-2"></i>
                   </a>
                 </div>
               </div>
             </div>
 
             <!-- Card 3 -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4">
-              <div class="live-site-card h-100">
+            <div class="col-lg-6 col-12 mb-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="live-site-card">
                 <div class="live-site-thumb">
                   <img src="images/project/Lenzip-Home.png" alt="Lenzip website preview" class="img-fluid" loading="lazy" decoding="async">
                 </div>
 
                 <div class="live-site-body">
-                  <h5 class="mb-1">Lenzip</h5>
-                  <small class="text-muted d-block mb-3">WordPress / Build + Launch</small>
-
+                  <small class="text-muted d-block mb-2">WordPress / Build + Launch</small>
+                  <h5 class="mb-3">Lenzip</h5>
+                  <p class="small text-muted mb-4" style="font-size: 0.95rem;">Manufacturer ecommerce ecosystem featuring complex product catalogs and industrial-grade web performance.</p>
                   <a href="https://lenzip.com/" target="_blank" rel="noopener"
-                    class="btn custom-btn custom-btn-bg custom-btn-link">
-                    See Live Website
+                    class="btn custom-btn">
+                    Explore Project <i class="bi bi-arrow-right ml-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-6 col-12 mb-5" data-aos="fade-up" data-aos-delay="300">
+              <div class="live-site-card">
+                <div class="live-site-thumb">
+                  <img src="images/project/cornerstone-website.png" alt="Cornerstone website preview" class="img-fluid" loading="lazy" decoding="async">
+                </div>
+
+                <div class="live-site-body">
+                  <small class="text-muted d-block mb-2">WordPress / Business Solution</small>
+                  <h5 class="mb-3">Cornerstone</h5>
+                  <p class="small text-muted mb-4" style="font-size: 0.95rem;">A comprehensive corporate solution providing regulatory licensing management with an Emphasis on clarity and trust.</p>
+                  <a href="https://cornerstonelicensing.com/" target="_blank" rel="noopener"
+                    class="btn custom-btn">
+                    Explore Project <i class="bi bi-arrow-right ml-2"></i>
                   </a>
                 </div>
               </div>
             </div>
 
           </div><!-- /row -->
+
+          <div class="row mt-5" data-aos="fade-up">
+            <div class="col-12 text-center">
+              <p class="mb-4">Want to see more of my work or discuss a specific project?</p>
+              <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link py-3 px-5">
+                Let's Talk About Your Project
+              </a>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -204,66 +220,128 @@
 
   <!-- projects -->
   <section class="project py-5" id="project">
-    <div class="container">
+    <div class="container py-5">
       <div class="row">
         <div class="col-lg-11 text-center mx-auto col-12">
-          <div class="col-lg-8 mx-auto mb-5">
-            <h2>Projects I have worked on!</h2>
+          <div class="col-lg-8 mx-auto mb-5 section-header">
+            <h2 class="mb-4">Digital Showcases</h2>
+            <p class="text-muted">A collection of custom-built applications, API integrations, and technical solutions.</p>
           </div>
 
-          <div class="owl-carousel owl-theme">
-            <div class="item" data-toggle="tooltip" data-placement="left" title="Click to Open">
-              <a href="https://shop21apparel.myshopify.com/" target="_blank" class="project-info" rel="noopener">
-                <h4>Shopify ECommerce Store</h4>
-              </a>
-              <video class="img-fluid" poster="images/project/project-05.png" autoplay loop muted>
-                <source src="images/project/project-05.mov" type="video/mp4">
-              </video>
+          <div class="owl-carousel owl-theme project-carousel">
+            
+            <div class="item">
+              <div class="project-card-v2">
+                <div class="project-card-video">
+                  <video class="img-fluid" poster="images/project/project-05.png" autoplay loop muted>
+                    <source src="images/project/project-05.mov" type="video/mp4">
+                  </video>
+                  <div class="project-card-overlay">
+                    <a href="https://shop21apparel.myshopify.com/" target="_blank" rel="noopener" class="btn custom-btn-pill">
+                      View Demo <i class="bi bi-arrow-up-right ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card-info">
+                  <span class="badge badge-pill badge-light mb-2">Shopify / Liquid</span>
+                  <h4>Shopify ECommerce</h4>
+                </div>
+              </div>
             </div>
 
-            <div class="item" data-toggle="tooltip" data-placement="left" title="Click to Open">
-              <a href="#" target="_blank" class="project-info" rel="noopener">
-                <h4>AI-Powered Chat</h4>
-              </a>
-              <video class="img-fluid" poster="images/project/project-06.png" autoplay loop muted>
-                <source src="images/project/project-06.mov" type="video/mp4">
-              </video>
+            <div class="item">
+              <div class="project-card-v2">
+                <div class="project-card-video">
+                  <video class="img-fluid" poster="images/project/project-06.png" autoplay loop muted>
+                    <source src="images/project/project-06.mov" type="video/mp4">
+                  </video>
+                  <div class="project-card-overlay">
+                    <a href="#" target="_blank" rel="noopener" class="btn custom-btn-pill">
+                      View Demo <i class="bi bi-arrow-up-right ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card-info">
+                  <span class="badge badge-pill badge-light mb-2">OpenAI / React</span>
+                  <h4>AI-Powered Chat</h4>
+                </div>
+              </div>
             </div>
 
-            <div class="item" data-toggle="tooltip" data-placement="left" title="Click to Open">
-              <a href="https://yelp-search-dev.netlify.app/" target="_blank" class="project-info" rel="noopener">
-                <h4>Local Business Search</h4>
-              </a>
-              <video class="img-fluid" poster="images/project/project-02.png" autoplay loop muted>
-                <source src="images/project/project-02.mov" type="video/mp4">
-              </video>
+            <div class="item">
+              <div class="project-card-v2">
+                <div class="project-card-video">
+                  <video class="img-fluid" poster="images/project/project-02.png" autoplay loop muted>
+                    <source src="images/project/project-02.mov" type="video/mp4">
+                  </video>
+                  <div class="project-card-overlay">
+                    <a href="https://yelp-search-dev.netlify.app/" target="_blank" rel="noopener" class="btn custom-btn-pill">
+                      View Demo <i class="bi bi-arrow-up-right ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card-info">
+                  <span class="badge badge-pill badge-light mb-2">React / API</span>
+                  <h4>Business Search</h4>
+                </div>
+              </div>
             </div>
 
-            <div class="item" data-toggle="tooltip" data-placement="left" title="Click to Open">
-              <a href="https://squirrel-hill-parking.netlify.app/" target="_blank" class="project-info" rel="noopener">
-                <h4>Parking Reservation App</h4>
-              </a>
-              <video class="img-fluid" poster="images/project/project-04.png" autoplay loop muted>
-                <source src="images/project/project-04.mov" type="video/mp4">
-              </video>
+            <div class="item">
+              <div class="project-card-v2">
+                <div class="project-card-video">
+                  <video class="img-fluid" poster="images/project/project-04.png" autoplay loop muted>
+                    <source src="images/project/project-04.mov" type="video/mp4">
+                  </video>
+                  <div class="project-card-overlay">
+                    <a href="https://squirrel-hill-parking.netlify.app/" target="_blank" rel="noopener" class="btn custom-btn-pill">
+                      View Demo <i class="bi bi-arrow-up-right ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card-info">
+                  <span class="badge badge-pill badge-light mb-2">Full Stack / Auth</span>
+                  <h4>Parking App</h4>
+                </div>
+              </div>
             </div>
 
-            <div class="item" data-toggle="tooltip" data-placement="left" title="Click to Open">
-              <a href="https://taut-messenger.netlify.app/" target="_blank" class="project-info" rel="noopener">
-                <h4>Real-Time Messenger</h4>
-              </a>
-              <video class="img-fluid" autoplay loop muted>
-                <source src="images/project/project-03.mov" type="video/mp4">
-              </video>
+            <div class="item">
+              <div class="project-card-v2">
+                <div class="project-card-video">
+                  <video class="img-fluid" autoplay loop muted>
+                    <source src="images/project/project-03.mov" type="video/mp4">
+                  </video>
+                  <div class="project-card-overlay">
+                    <a href="https://taut-messenger.netlify.app/" target="_blank" rel="noopener" class="btn custom-btn-pill">
+                      View Demo <i class="bi bi-arrow-up-right ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card-info">
+                  <span class="badge badge-pill badge-light mb-2">Firebase / React</span>
+                  <h4>Real-Time Messenger</h4>
+                </div>
+              </div>
             </div>
 
-            <div class="item" data-toggle="tooltip" data-placement="left" title="Click to Open">
-              <a href="https://profile-page-dev.netlify.app/" target="_blank" class="project-info" rel="noopener">
-                <h4>LinkedIn Profile Clone</h4>
-              </a>
-              <video class="img-fluid" poster="images/project/project-01.png" autoplay loop muted>
-                <source src="images/project/project-01.mov" type="video/mp4">
-              </video>
+            <div class="item">
+              <div class="project-card-v2">
+                <div class="project-card-video">
+                  <video class="img-fluid" poster="images/project/project-01.png" autoplay loop muted>
+                    <source src="images/project/project-01.mov" type="video/mp4">
+                  </video>
+                  <div class="project-card-overlay">
+                    <a href="https://profile-page-dev.netlify.app/" target="_blank" rel="noopener" class="btn custom-btn-pill">
+                      View Demo <i class="bi bi-arrow-up-right ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card-info">
+                  <span class="badge badge-pill badge-light mb-2">HTML / CSS</span>
+                  <h4>UI Clone</h4>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -273,156 +351,199 @@
   </section>
 
   <!-- resume -->
-  <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-6 col-12">
-          <h2 class="mb-4">Experience</h2>
+  <section class="resume py-5" id="resume">
+    <div class="container py-5">
+      
+      <!-- Row 1: Experience -->
+      <div class="row mb-5">
+        <div class="col-lg-10 col-12 mx-auto">
+          <div class="section-header mb-5">
+            <h2 class="mb-4">Professional Journey</h2>
+            <p class="text-muted">A timeline of my growth and contributions in the tech ecosystem.</p>
+          </div>
 
           <div class="timeline">
-
-            <div class="timeline-wrapper">
+            <div class="timeline-wrapper" data-aos="fade-up" data-aos-delay="100">
               <div class="timeline-yr">
                 <span>Present</span>
               </div>
               <div class="timeline-info">
-                <h3>Web Developer</h3>
+                <h3>Web Developer <span class="badge badge-pill badge-warning ml-2" style="font-size: 0.6em; vertical-align: middle;">Current</span></h3>
                 <small>Uniqcli</small>
-                <p>
-                  &#8226; Developed custom WordPress themes using PHP, JavaScript, and ACF for dynamic, database driven content.<br><br>
-                  &#8226; Improved technical SEO and Core Web Vitals, increasing organic traffic by 75%.<br><br>
-                  &#8226; Integrated REST APIs, HubSpot tools, Airtable, and third party services to automate workflows and marketing systems.<br><br>
-                  &#8226; Led website migrations and end to end deployments while preserving SEO equity and ensuring zero downtime.
-                </p>
+                <div class="timeline-details mt-3">
+                  <p>&#8226; Developed custom WordPress themes using PHP, JavaScript, and ACF for dynamic, database driven content.</p>
+                  <p>&#8226; Improved technical SEO and Core Web Vitals, increasing organic traffic by 75%.</p>
+                  <p>&#8226; Integrated REST APIs, HubSpot tools, Airtable, and third party services to automate workflows.</p>
+                  <p>&#8226; Led website migrations and end to end deployments ensuring zero downtime.</p>
+                </div>
               </div>
             </div>
 
-            <div class="timeline-wrapper">
+            <div class="timeline-wrapper" data-aos="fade-up" data-aos-delay="200">
               <div class="timeline-yr">
                 <span>2025</span>
               </div>
               <div class="timeline-info">
                 <h3>Software Developer</h3>
                 <small><a href="https://www.rumzer.com" target="_blank" rel="noopener">Rumzer LLC</a></small>
-                <p>
-                  &#8226; Migrated a large scale web application from 11ty and Bootstrap to Angular and Tailwind CSS, significantly improving performance and responsiveness.<br><br>
-                  &#8226; Built reusable UI components and optimized layouts for scalability and cross browser compatibility.<br><br>
-                  &#8226; Developed API driven interfaces and improved page load speed through frontend optimization and asset reduction.
-                </p>
+                <div class="timeline-details mt-3">
+                  <p>&#8226; Migrated a large scale web application from 11ty and Bootstrap to Angular and Tailwind CSS.</p>
+                  <p>&#8226; Built reusable UI components and optimized layouts for scalability.</p>
+                  <p>&#8226; Developed API driven interfaces and improved page load speed through asset reduction.</p>
+                </div>
               </div>
             </div>
 
-            <div class="timeline-wrapper">
+            <div class="timeline-wrapper" data-aos="fade-up" data-aos-delay="300">
               <div class="timeline-yr">
                 <span>2021</span>
               </div>
               <div class="timeline-info">
                 <h3>IT Consultant</h3>
                 <small>Apisero Inc.</small>
-                <p>
-                  &#8226; Built enterprise level WordPress and Shopify solutions including custom themes, Liquid templates, and scalable ecommerce workflows.<br><br>
-                  &#8226; Integrated Shopify REST and GraphQL APIs for dynamic product rendering and system automation.<br><br>
-                  &#8226; Translated Figma designs into responsive, production ready interfaces using HTML, CSS, and JavaScript.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2019</span>
-              </div>
-              <div class="timeline-info">
-                <h3>UI Developer</h3>
-                <small>Digital Expert</small>
-                <p>
-                  &#8226; Built responsive and accessible UI components following WCAG standards.<br><br>
-                  &#8226; Developed React based applications and optimized frontend performance across multiple projects.<br><br>
-                  &#8226; Collaborated closely with designers and product teams to refine user experience and interface architecture.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-12">
-          <h2 class="mb-4 mobile-mt-2">Education</h2>
-
-          <div class="timeline">
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2024</span>
-              </div>
-              <div class="timeline-info">
-                <h3>Master of Science in Information Technology</h3>
-                <small>Franklin University, Columbus, OH</small>
-                <p><i>Coursework:</i> Programming Foundations, Database Management, Web Development & Deployment,
-                  Network Cloud & Systems Management, Information Assurance & Risk Management, Advanced Network
-                  Security, Ethical Hacking, IT Strategy & Policy, Project Management.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper">
-              <div class="timeline-yr">
-                <span>2022</span>
+                <div class="timeline-details mt-3">
+                  <p>&#8226; Built enterprise level WordPress and Shopify solutions including custom themes and Liquid templates.</p>
+                  <p>&#8226; Integrated Shopify REST and GraphQL APIs for dynamic product rendering.</p>
+                  <p>&#8226; Translated Figma designs into responsive, production ready interfaces.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
+
+      <!-- Row 2: Education & Technical Proficiency -->
+      <div class="row mt-5">
+        <div class="col-lg-10 col-12 mx-auto">
+          <div class="row align-items-stretch">
+            
+            <!-- Education Box -->
+            <div class="col-lg-5 col-12 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <div class="resume-side-block h-100">
+                <div class="section-header mb-4">
+                  <h2 class="h4 mb-0">Education</h2>
+                </div>
+                <div class="education-card p-4 h-100" style="background: var(--white); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.02);">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="edu-icon mr-3" style="width: 45px; height: 55px; background: rgba(255,194,0,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary-color);">
+                      <i class="bi bi-mortarboard-fill" style="font-size: 1.5rem;"></i>
+                    </div>
+                    <div>
+                      <h4 class="mb-0" style="font-size: 1.1rem;">Franklin University</h4>
+                      <small class="text-muted">Master of Science in IT</small>
+                    </div>
+                  </div>
+                  <p class="text-muted mb-0">Specialized in Database Management, Web Deployment, and Information Assurance.</p>
+                  <div class="mt-3 pt-3 border-top">
+                    <small class="font-weight-bold">Columbus, OH • Class of 2024</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Skills Box -->
+            <div class="col-lg-7 col-12" data-aos="fade-up" data-aos-delay="200">
+              <div class="resume-side-block h-100">
+                <div class="section-header mb-4">
+                  <h2 class="h4 mb-0">Technical Proficiency</h2>
+                </div>
+                <div class="skill-stack-mini p-4 h-100" style="background: #f9f9fb; border-radius: 20px; border: 1px solid rgba(0,0,0,0.02);">
+                  <div class="skill-tags d-flex flex-wrap mb-4">
+                    <div class="skill-tag-item mr-3 mb-2 small font-weight-bold"><i class="bi bi-check2-circle text-warning mr-1"></i> WordPress</div>
+                    <div class="skill-tag-item mr-3 mb-2 small font-weight-bold"><i class="bi bi-check2-circle text-warning mr-1"></i> React/Angular</div>
+                    <div class="skill-tag-item mr-3 mb-2 small font-weight-bold"><i class="bi bi-check2-circle text-warning mr-1"></i> PHP/Liquid</div>
+                    <div class="skill-tag-item mr-3 mb-2 small font-weight-bold"><i class="bi bi-check2-circle text-warning mr-1"></i> REST & GraphQL</div>
+                    <div class="skill-tag-item mr-3 mb-2 small font-weight-bold"><i class="bi bi-check2-circle text-warning mr-1"></i> SEO Optimization</div>
+                  </div>
+                  
+                  <div class="d-flex flex-wrap">
+                    <span class="badge badge-white shadow-sm p-3 m-1" style="border-radius: 12px; font-weight: 600; background: #fff;">Custom Themes</span>
+                    <span class="badge badge-white shadow-sm p-3 m-1" style="border-radius: 12px; font-weight: 600; background: #fff;">API Integration</span>
+                    <span class="badge badge-white shadow-sm p-3 m-1" style="border-radius: 12px; font-weight: 600; background: #fff;">Core Web Vitals</span>
+                    <span class="badge badge-white shadow-sm p-3 m-1" style="border-radius: 12px; font-weight: 600; background: #fff;">E-Commerce</span>
+                    <span class="badge badge-white shadow-sm p-3 m-1" style="border-radius: 12px; font-weight: 600; background: #fff;">Figma to Code</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- contact -->
   <section class="contact py-5 mt-5" id="contact">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5 mr-lg-5 col-12">
-          <div class="static-map w-100">
-            <img src="images/project/static-map.png" width="400" height="300" alt="map" />
-          </div>
-          <div class="contact-info d-flex flex-column justify-content-between align-items-start py-4 px-lg-5">
-            <div class="contact-info-item">
-              <h3 class="mb-3 text-white">Pittsburgh, Pennsylvania</h3>
+      <div class="row align-items-center">
+        
+        <div class="col-lg-5 col-12 mb-5 mb-lg-0" data-aos="fade-right">
+          <div class="contact-content">
+            <h2 class="mb-4">Let's build something <span class="text-warning">extraordinary</span></h2>
+            <p class="mb-5">Whether you have a specific project in mind or just want to explore possibilities, I'm here to help you scale your digital presence.</p>
+            
+            <div class="contact-method mb-4 d-flex align-items-center">
+              <div class="icon-box mr-3">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="method-text">
+                <small class="text-muted d-block">Location</small>
+                <strong>Pittsburgh, Pennsylvania</strong>
+              </div>
             </div>
-            <ul class="social-links d-flex flex-row justify-content-start">
-              <li class="mr-3"><a href="https://www.linkedin.com/in/pranjalisachan" target="_blank"
-                  data-toggle="tooltip" data-placement="left" title="LinkedIn" rel="noopener">
-                  <i class="bi bi-linkedin"></i>
-                </a>
-              </li>
-              <li><a href="https://www.github.com/PranjaliSachan" target="_blank" data-toggle="tooltip"
-                  data-placement="left" title="Github" rel="noopener">
-                  <i class="bi bi-github"></i>
-                </a>
-              </li>
-            </ul>
+
+            <div class="social-box mt-5">
+              <h5 class="mb-3">Connect Socially</h5>
+              <ul class="social-links d-flex flex-row justify-content-start">
+                <li class="mr-3">
+                  <a href="https://www.linkedin.com/in/pranjalisachan" target="_blank" title="LinkedIn" rel="noopener">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.github.com/PranjaliSachan" target="_blank" title="Github" rel="noopener">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-6 col-12">
-          <div class="contact-form">
-            <h2 class="mb-4">Hire me? Let's talk</h2>
-            <form name="contact-form-netlify" method="POST" data-netlify="true">
-              <div class="row">
-                <div class="col-lg-6 col-12">
-                  <input id="name" type="text" class="form-control" name="name" placeholder="Your Name">
+        <div class="col-lg-7 col-12" data-aos="fade-left">
+          <div class="contact-form-wrapper">
+            <div class="contact-form">
+              <h3 class="mb-4">Send a Message</h3>
+              <form name="contact-form-netlify" method="POST" action="/success.html" data-netlify="true">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <div class="form-group mb-4">
+                      <label class="small font-weight-bold">Your Name</label>
+                      <input id="name" type="text" class="form-control shadow-none" name="name" placeholder="John Doe" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                    <div class="form-group mb-4">
+                      <label class="small font-weight-bold">Email Address</label>
+                      <input id="email" type="email" class="form-control shadow-none" name="email" placeholder="john@example.com" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group mb-4">
+                      <label class="small font-weight-bold">Message</label>
+                      <textarea id="message" name="message" rows="5" class="form-control shadow-none" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="submit-btn w-100 py-3">
+                      Start Conversation <i class="bi bi-send-fill ml-2"></i>
+                    </button>
+                  </div>
                 </div>
-                <div class="col-lg-6 col-12">
-                  <input id="email" type="email" class="form-control" name="email" placeholder="Email">
-                </div>
-                <div class="col-12">
-                  <textarea id="message" name="message" rows="6" class="form-control"
-                    placeholder="Message..."></textarea>
-                </div>
-                <div class="ml-lg-auto col-lg-5 col-12">
-                  <button type="submit" class="form-control submit-btn">Send</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
 
@@ -452,6 +573,14 @@
   <script src="js/smoothscroll.js"></script>
   <script src="js/tippy.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
 
 </body>
 

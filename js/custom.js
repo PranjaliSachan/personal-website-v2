@@ -11,11 +11,24 @@
   $(".navbar").headroom();
 
   // PROJECT CAROUSEL
-  $('.owl-carousel').owlCarousel({
+  $('.project-carousel').owlCarousel({
     items: 1,
     loop: true,
-    margin: 10,
-    nav: true
+    margin: 30,
+    nav: true,
+    dots: true,
+    navText: ["<span><i class='uil uil-angle-left-b'></i></span>", "<span><i class='uil uil-angle-right-b'></i></span>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      1024: {
+        items: 2
+      }
+    }
   });
 
   // SMOOTHSCROLL
