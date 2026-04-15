@@ -8,7 +8,15 @@
   });
 
   // HEADER
-  $(".navbar").headroom();
+  $(".navbar").headroom({
+    "offset": 0,
+    "tolerance": 0,
+    "classes": {
+      "initial": "animated",
+      "pinned": "headroom--pinned",
+      "unpinned": "headroom--unpinned"
+    }
+  });
 
   // PROJECT CAROUSEL
   $('.project-carousel').owlCarousel({
