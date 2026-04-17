@@ -1748,6 +1748,15 @@ section.about h1 {
   color: #000;
 }
 
+.dark-mode .articles {
+  background: #0c0c0d !important;
+}
+
+.dark-mode .articles h2, 
+.dark-mode .articles p {
+  color: #ffffff !important;
+}
+
 .dark-mode .article-card {
   background: #1a1a1b;
   border-color: rgba(255,255,255,0.05);
