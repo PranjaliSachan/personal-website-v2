@@ -1749,12 +1749,22 @@ section.about h1 {
 }
 
 .dark-mode .article-card {
-  background: #1a1a1a;
-  border-color: rgba(255,255,255,0.1);
+  background: #1a1a1b;
+  border-color: rgba(255,255,255,0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
 }
 
 .dark-mode .article-icon-box {
-  background: #252525;
+  background: #111112;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.dark-mode .article-content h4 {
+  color: #ffffff;
+}
+
+.dark-mode .article-content p {
+  color: #b0b0b5 !important;
 }
 
 .dark-mode .read-more:hover {
