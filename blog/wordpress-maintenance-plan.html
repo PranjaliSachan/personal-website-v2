@@ -13,38 +13,73 @@
     <link rel="stylesheet" href="../css/styles.css">
 
     <style>
+        :root {
+            --blog-content-size: 1.1rem;
+        }
         .blog-header {
-            padding: 120px 0 60px;
-            background: #fbfbfd;
+            padding: 80px 0 40px;
+            background: #f9f9fb;
         }
-
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-header h1 {
+            font-size: 2.2rem;
+            line-height: 1.3;
+        }
         .blog-content {
-            font-size: 1.15rem;
+            font-size: var(--blog-content-size);
             line-height: 1.8;
-            color: #333;
+            color: #444;
         }
-
         .blog-content h2 {
+            font-size: 1.6rem;
             margin-top: 2.5rem;
             margin-bottom: 1rem;
-            font-weight: 700;
+            color: var(--p-color);
         }
-
         .blog-content h3 {
+            font-size: 1.3rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
-            font-weight: 600;
-            color: var(--primary-color);
+            color: var(--p-color);
         }
-
         .blog-content ul, .blog-content ol {
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
-
         .blog-content li {
             margin-bottom: 0.5rem;
         }
-
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .author-img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 40px;
+            color: var(--p-color);
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .back-btn:hover {
+            color: var(--primary-color);
+            text-decoration: none;
+            transform: translateX(-5px);
+        }
         .cta-box {
             background: #f8f9fa;
             border-left: 5px solid var(--primary-color);
@@ -52,10 +87,9 @@
             border-radius: 10px;
             margin-top: 4rem;
         }
-
-        body.dark-mode .blog-header { background: #111; }
+        body.dark-mode .blog-header { background: #1a1a1a; }
         body.dark-mode .blog-content { color: #ccc; }
-        body.dark-mode .blog-content h2 { color: #fff; }
+        body.dark-mode .blog-content h2, body.dark-mode .blog-content h3 { color: #fff; }
         body.dark-mode .cta-box { background: #222; }
     </style>
 </head>
@@ -84,11 +118,19 @@
 
     <header class="blog-header">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up">
-                    <small class="text-warning font-weight-bold text-uppercase">Maintenance & Operations</small>
-                    <h1 class="display-4 font-weight-bold mt-2">WordPress Maintenance Plan: What to Do Monthly, Weekly, and Daily (2026 Guide)</h1>
-                    <p class="text-muted lead mt-3">A practical breakdown of essential tasks to keep your business website secure, fast, and reliable.</p>
+            <div class="blog-container" data-aos="fade-up">
+                <a href="index.html" class="back-btn">
+                    <i class="bi bi-arrow-left mr-2"></i> Back to Blog Hub
+                </a>
+                <h1 class="font-weight-bold mb-4">WordPress Maintenance Plan: What to Do Monthly, Weekly, and Daily (2026 Guide)</h1>
+                <div class="blog-meta">
+                    <div class="author-img">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <div>
+                        <strong class="d-block">Pranjali Sachan</strong>
+                        <small class="text-muted">WordPress Specialist • 8 min read</small>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,10 +138,9 @@
 
     <article class="py-5">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-9 blog-content" data-aos="fade-up" data-aos-delay="100">
-                    
-                    <p>A WordPress website is not a one-time setup. Without ongoing maintenance, even a well-built site can become slow, insecure, and unreliable over time.</p>
+            <div class="blog-container blog-content" data-aos="fade-up" data-aos-delay="100">
+                
+                <p class="lead">A WordPress website is not a one-time setup. Without ongoing maintenance, even a well-built site can become slow, insecure, and unreliable over time.</p>
                     <p>Many business owners only realize this after their site breaks, gets hacked, or loses performance. In 2026, where digital presence is your strongest asset, skipping maintenance is a risk you can't afford.</p>
 
                     <h2>Why WordPress Maintenance Matters</h2>
