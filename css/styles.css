@@ -1,27 +1,60 @@
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
 
 :root {
-  --primary-color: #f28d62; /* Soft Orange from image */
-  --accent-color: #557c74;  /* Sage Green from image */
-  --secondary-color: #474559;
+  --primary-color: #D86027; /* Rich Terracotta from image */
+  --accent-color: #557c74;  /* Sage Green */
+  --secondary-color: #1a1a1b; /* Darker slate for modern feel */
   --white: #ffffff;
-  --p-color: #5b5b5b;
-  --dark-bg: #0c0c0d;
-  --card-shadow: 0 12px 30px rgba(0,0,0,0.05);
-  --section-padding: 100px 0;
-  --glass: rgba(255, 255, 255, 0.03);
+  --p-color: #717275;
+  --dark-bg: #121212;
+  --light-bg: #fdfdfd;
+  --card-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  --section-padding: 120px 0;
 }
 
-/* Background Tech Grid */
+/* Modern Minimal Background */
 .about {
+  background-color: var(--light-bg);
   background-image: 
-    radial-gradient(circle at 2px 2px, rgba(242, 141, 98, 0.05) 1px, transparent 0);
-  background-size: 40px 40px;
+    linear-gradient(rgba(216, 96, 39, 0.03) 1px, transparent 1px),
+    linear-gradient(90px, rgba(216, 96, 39, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
 }
 
 .dark-mode .about {
+  background-color: #0c0c0d;
   background-image: 
-    radial-gradient(circle at 2px 2px, rgba(242, 141, 98, 0.08) 1px, transparent 0);
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90px, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.custom-btn-bg {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+  border-radius: 50px !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.custom-btn-bg:hover {
+  transform: scale(1.05) translateY(-3px);
+  box-shadow: 0 15px 30px rgba(216, 96, 39, 0.3) !important;
+}
+
+/* Portfolio Card Design Enhancement */
+.project-info {
+  background: #fff;
+  border-radius: 0 0 24px 24px;
+  padding: 25px;
+  border-top: none;
+}
+
+.dark-mode .project-info {
+  background: #1a1a1b;
+}
+
+.project-image {
+  border-radius: 24px 24px 0 0;
+  overflow: hidden;
 }
 
 /* Gradient Text Effect */
