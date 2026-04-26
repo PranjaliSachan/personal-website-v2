@@ -16,15 +16,18 @@
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light">
+  <nav class="navbar navbar-expand-sm navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <i class='uil uil-user'></i>
-        Pranjali Sachan
+        <span class="brand-initial">P</span>
+        Pranjali
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -36,121 +39,148 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
-          </li>
-
-          <!-- Optional: If you want nav link for Live Websites, uncomment this
-          <li class="nav-item">
-            <a href="#live-websites" class="nav-link"><span data-hover="Live">Live</span></a>
-          </li>
-          -->
-
-          <li class="nav-item">
-            <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+          <li class="nav-item active">
+            <a href="#about" class="nav-link"><span data-hover="Home">Home</span></a>
           </li>
           <li class="nav-item">
-            <a href="#resume" class="nav-link"><span data-hover="Resume">Experience</span></a>
+            <a href="#services" class="nav-link"><span data-hover="Services">Services</span></a>
           </li>
           <li class="nav-item">
-            <a href="#articles" class="nav-link"><span data-hover="Articles">Articles</span></a>
+            <a href="#edu-work" class="nav-link"><span data-hover="Resume">Resume</span></a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+            <a href="#live-websites" class="nav-link"><span data-hover="Projects">Projects</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#articles" class="nav-link"><span data-hover="Blogs">Blogs</span></a>
           </li>
         </ul>
-
-        <ul class="navbar-nav ml-lg-auto">
-          <div class="ml-lg-4">
-            <div class="color-mode d-lg-flex justify-content-center align-items-center">
-              <i class="color-mode-icon"></i>
-            </div>
-          </div>
-        </ul>
+        <a href="#contact" class="nav-contact-btn">Contact Me</a>
       </div>
     </div>
   </nav>
 
-  <!-- about -->
+  <!-- hero -->
   <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
-    <div class="container" data-aos="fade-up">
-      <div class="row">
+    <div class="container">
+      <div class="row align-items-center">
 
-        <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+        <div class="col-lg-6 col-md-12 col-12">
           <div class="about-text" data-aos="fade-right" data-aos-delay="200">
-            <h1 class="font-weight-bold mb-4">
-              <span class="text-muted d-block small mb-2" style="letter-spacing: 2px; text-transform: uppercase;">Hello!</span>
-              Hi! I'm <span style="color: var(--primary-color);">Pranjali Sachan.</span>
+
+            <div class="hello-badge mb-4">
+              <span class="hello-dot"></span>
+              <span class="hello-wave">👋</span>
+              <span class="hello-text">Hello there!</span>
+            </div>
+
+            <h1 class="hero-heading">
+              <span class="hero-name">I'm Pranjali Sachan,</span>
+              <span class="hero-title-line">WordPress Developer</span>
+              <span class="hero-title-line">based in USA.</span>
             </h1>
-            
-            <p class="lead mt-4 mb-5" style="font-size: 1.25rem; line-height: 1.6;">
-              I'm a <span style="border-bottom: 2px solid var(--accent-color); color: var(--accent-color); padding-bottom: 2px;">WordPress Architect</span> & performance expert who loves helping brands get more eyes on their work.
+
+            <p class="hero-desc mt-4 mb-5">
+              With over 5 years of experience, I build high-performance WordPress sites, drive organic growth through technical SEO, and craft digital ecosystems that convert.
             </p>
 
-            <div class="custom-btn-group mt-5">
-              <a href="#contact" class="btn custom-btn custom-btn-bg py-3 px-5">Tell Me More!</a>
-              <a href="files/Pranjali-Sachan-Resume.pdf" target="_blank" rel="noopener" class="btn ml-3 py-3 font-weight-bold" style="color: var(--secondary-color); border-bottom: 2px solid var(--primary-color); border-radius: 0;">
-                View Portfolio <i class="bi bi-arrow-up-right ml-2"></i>
+            <div class="hero-cta-group mb-5">
+              <a href="files/Pranjali-Sachan-Resume.pdf" target="_blank" rel="noopener" class="hero-btn-primary">
+                <span class="btn-play-icon"><i class="bi bi-download"></i></span>
+                <span class="btn-text">Download Resume</span>
               </a>
+              <a href="#contact" class="hero-btn-outline">Hire Me</a>
             </div>
+
+            <div class="hero-stats d-flex align-items-center">
+              <div class="client-avatars d-flex">
+                <div class="avatar-ring"><img src="https://api.dicebear.com/9.x/adventurer/svg?seed=Mia&backgroundColor=ffd5dc" alt="client" /></div>
+                <div class="avatar-ring"><img src="https://api.dicebear.com/9.x/adventurer/svg?seed=Zoe&backgroundColor=c0aede" alt="client" /></div>
+                <div class="avatar-ring"><img src="https://api.dicebear.com/9.x/adventurer/svg?seed=Sam&backgroundColor=b6e3f4" alt="client" /></div>
+                <div class="avatar-ring"><img src="https://api.dicebear.com/9.x/adventurer/svg?seed=Alex&backgroundColor=d1e8c7" alt="client" /></div>
+                <div class="avatar-ring avatar-plus"><span>+</span></div>
+              </div>
+              <div class="stats-label ml-3">
+                <strong class="stats-number">50+</strong>
+                <span class="d-block stats-sub">Happy Clients</span>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="col-lg-5 col-md-12 col-12">
-          <div class="about-image" data-aos="fade-left" data-aos-delay="400">
-            <!-- Strategic Web Growth Visualization -->
-            <div class="growth-engine">
-              <div class="creative-blob" style="background: var(--accent-color); opacity: 0.1;"></div>
-              <!-- SEO Result Card -->
-              <div class="growth-card seo-card" data-aos="fade-down" data-aos-delay="500">
-                <div class="card-header">
-                  <i class="bi bi-search" style="color: var(--primary-color);"></i>
-                  <span>SEO Visibility</span>
+        <div class="col-lg-6 col-md-12 col-12" data-aos="fade-left" data-aos-delay="400">
+          <div class="hero-image-area">
+
+            <div class="hero-orange-circle"></div>
+
+            <!-- Dev Dashboard Illustration -->
+            <div class="dev-dashboard">
+
+              <!-- Floating SEO card (top right) -->
+              <div class="dev-float-card seo-float" data-aos="fade-down" data-aos-delay="500">
+                <div class="dfc-label"><i class="bi bi-search"></i> SEO Traffic</div>
+                <div class="dfc-bars">
+                  <div class="dfc-bar" style="height:35%"></div>
+                  <div class="dfc-bar" style="height:55%"></div>
+                  <div class="dfc-bar" style="height:50%"></div>
+                  <div class="dfc-bar" style="height:80%"></div>
+                  <div class="dfc-bar dfc-bar--active" style="height:100%"></div>
                 </div>
-                <div class="growth-chart">
-                  <div class="bar" style="height: 40%"></div>
-                  <div class="bar" style="height: 60%"></div>
-                  <div class="bar" style="height: 55%"></div>
-                  <div class="bar" style="height: 85%"></div>
-                  <div class="bar active" style="height: 100%"></div>
-                </div>
-                <div class="growth-status" style="color: var(--accent-color);">+240% Organic Traffic</div>
+                <div class="dfc-stat" style="color:#1FB5A9;">+240% Organic</div>
               </div>
 
-              <!-- Main Architecture Window -->
-              <div class="growth-window" data-aos="zoom-in" data-aos-delay="600">
-                <div class="window-nav" style="background: var(--primary-color); opacity: 0.8;">
-                  <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <!-- Main browser mockup -->
+              <div class="dev-browser" data-aos="zoom-in" data-aos-delay="600">
+                <div class="dev-browser-bar">
+                  <span class="db-dot"></span>
+                  <span class="db-dot"></span>
+                  <span class="db-dot"></span>
+                  <div class="db-url"><i class="bi bi-lock-fill"></i> yoursite.com</div>
                 </div>
-                <div class="window-inner">
-                  <div class="tech-stack">
-                    <div class="tech-pill"><i class="bi bi-wordpress" style="color: var(--accent-color);"></i> WordPress</div>
-                    <div class="tech-pill"><i class="bi bi-lightning-fill" style="color: var(--primary-color);"></i> Speed</div>
-                    <div class="tech-pill"><i class="bi bi-code-square" style="color: var(--accent-color);"></i> Development</div>
-                  </div>
-                  <div class="conversion-node" style="background: linear-gradient(135deg, var(--accent-color) 0%, #3e5a54 100%);">
-                    <div class="node-circle"><i class="bi bi-person-plus-fill"></i></div>
-                    <div class="node-text">
-                      <span class="label">Lead Gen</span>
-                      <span class="value">Ready to Launch</span>
+                <div class="dev-browser-body">
+                  <div class="db-pill"><i class="bi bi-wordpress"></i> WordPress</div>
+                  <div class="db-pill"><i class="bi bi-lightning-charge-fill"></i> Core Web Vitals</div>
+                  <div class="db-pill"><i class="bi bi-code-slash"></i> Custom Dev</div>
+                  <div class="db-cta-row">
+                    <div class="db-cta-badge">
+                      <div class="db-cta-icon"><i class="bi bi-rocket-takeoff-fill"></i></div>
+                      <div>
+                        <span class="db-cta-label">Site Launch</span>
+                        <span class="db-cta-val">Live &amp; Optimized</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Lead Gen Metric -->
-              <div class="growth-card leads-card" data-aos="fade-up" data-aos-delay="700">
-                <div class="leads-icon">
-                  <i class="bi bi-graph-up-arrow"></i>
+              <!-- Floating conversion card (bottom left) -->
+              <div class="dev-float-card leads-float" data-aos="fade-up" data-aos-delay="700">
+                <div class="dfc-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                <div class="dfc-info">
+                  <strong>Conversion Rate</strong>
+                  <div class="dfc-progress"><div class="dfc-progress-fill"></div></div>
                 </div>
-                <div class="leads-info">
-                  <strong>Conversion ROI</strong>
-                  <div class="progress-mini">
-                    <div class="progress-bar-mini" style="width: 85%"></div>
-                  </div>
+              </div>
+
+            </div><!-- /dev-dashboard -->
+
+            <div class="rotating-badge-wrapper">
+              <div class="rotating-badge">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <path id="circle-path" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+                  </defs>
+                  <text class="rotating-text">
+                    <textPath href="#circle-path">DISCUSS MORE &#8226; LET'S TALK &#8226; HIRE ME &#8226;&#160;&#160;</textPath>
+                  </text>
+                </svg>
+                <div class="badge-center-arrow">
+                  <i class="bi bi-arrow-up-right"></i>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 
@@ -160,36 +190,149 @@
 
   <!-- Interactive Skill Marquee Section -->
   <section class="marquee-container">
-    <div class="marquee-content">
-      <i class="bi bi-wordpress"></i>
-      <i class="bi bi-code-slash"></i>
-      <i class="bi bi-search"></i>
-      <i class="bi bi-lightning-fill"></i>
-      <i class="bi bi-database-fill"></i>
-      <i class="bi bi-shield-lock-fill"></i>
-      <i class="bi bi-google"></i>
-      <i class="bi bi-wordpress"></i>
-      <i class="bi bi-code-slash"></i>
-      <i class="bi bi-search"></i>
-      <i class="bi bi-lightning-fill"></i>
-      <i class="bi bi-database-fill"></i>
-      <i class="bi bi-shield-lock-fill"></i>
-      <i class="bi bi-google"></i>
+    <div class="marquee-track">
+      <div class="marquee-set">
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/wordpress/000" alt="WordPress"><span class="marquee-label">WordPress</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/html5/000" alt="HTML5"><span class="marquee-label">HTML5</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/css3/000" alt="CSS3"><span class="marquee-label">CSS3</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/javascript/000" alt="JavaScript"><span class="marquee-label">JavaScript</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/react/000" alt="React"><span class="marquee-label">React</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/nextdotjs/000" alt="Next.js"><span class="marquee-label">Next.js</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/typescript/000" alt="TypeScript"><span class="marquee-label">TypeScript</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/php/000" alt="PHP"><span class="marquee-label">PHP</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/mysql/000" alt="MySQL"><span class="marquee-label">MySQL</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/shopify/000" alt="Shopify"><span class="marquee-label">Shopify</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/webflow/000" alt="Webflow"><span class="marquee-label">Webflow</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/tailwindcss/000" alt="Tailwind"><span class="marquee-label">Tailwind</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/git/000" alt="Git"><span class="marquee-label">Git</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/figma/000" alt="Figma"><span class="marquee-label">Figma</span></div>
+      </div>
+      <div class="marquee-set" aria-hidden="true">
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/wordpress/000" alt="WordPress"><span class="marquee-label">WordPress</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/html5/000" alt="HTML5"><span class="marquee-label">HTML5</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/css3/000" alt="CSS3"><span class="marquee-label">CSS3</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/javascript/000" alt="JavaScript"><span class="marquee-label">JavaScript</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/react/000" alt="React"><span class="marquee-label">React</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/nextdotjs/000" alt="Next.js"><span class="marquee-label">Next.js</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/typescript/000" alt="TypeScript"><span class="marquee-label">TypeScript</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/php/000" alt="PHP"><span class="marquee-label">PHP</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/mysql/000" alt="MySQL"><span class="marquee-label">MySQL</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/shopify/000" alt="Shopify"><span class="marquee-label">Shopify</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/webflow/000" alt="Webflow"><span class="marquee-label">Webflow</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/tailwindcss/000" alt="Tailwind"><span class="marquee-label">Tailwind</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/git/000" alt="Git"><span class="marquee-label">Git</span></div>
+        <div class="marquee-item"><img src="https://cdn.simpleicons.org/figma/000" alt="Figma"><span class="marquee-label">Figma</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Services Section (Reimagined from Image) -->
+  <section class="py-5" id="services">
+    <div class="container">
+      <div class="services-container shadow-lg" data-aos="fade-up">
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <h2 class="font-weight-bold text-white mb-0" style="font-size: 2.5rem;">My <span>Services</span></h2>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <p style="color: rgba(255,255,255,0.75); margin-top: 0.5rem;">I offer high-end digital solutions focused on growth, performance, and modern aesthetics.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Web Development -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <h4>Web Development</h4>
+              <p>Custom WordPress architecture and full-stack solutions built for scale.</p>
+              <div class="service-img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&fit=crop&q=80'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+            </div>
+          </div>
+
+          <!-- Web Design (Active/Highlighted) -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card active">
+              <h4>SEO Strategy</h4>
+              <p>Technical SEO audits and AI-search optimization to drive organic growth.</p>
+              <div class="service-img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&fit=crop&q=80'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+            </div>
+          </div>
+
+          <!-- App Design -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <h4>Digital Ops</h4>
+              <p>Website management, maintenance plans, and performance monitoring.</p>
+              <div class="service-img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&fit=crop&q=80'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Working Process -->
+  <section class="process-section py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="font-weight-bold" style="font-size: 2.5rem;">My Working <span style="color: var(--primary-color);">Process</span></h2>
+      </div>
+      <div class="row align-items-center justify-content-center">
+
+        <div class="col-lg-3 col-md-4 col-12 text-center process-step" data-aos="fade-up" data-aos-delay="100">
+          <div class="process-icon-circle mx-auto mb-4">
+            <i class="bi bi-lightbulb-fill"></i>
+          </div>
+          <h5 class="font-weight-bold mb-3">Discovery &amp; Planning</h5>
+          <p class="text-muted small">Understanding your goals, audience, and technical requirements to build a strong foundation.</p>
+        </div>
+
+        <div class="col-lg-1 col-12 text-center d-none d-lg-flex align-items-center justify-content-center">
+          <span class="process-arrow">&#8594;</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12 text-center process-step" data-aos="fade-up" data-aos-delay="200">
+          <div class="process-icon-circle mx-auto mb-4">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <h5 class="font-weight-bold mb-3">Design &amp; Build</h5>
+          <p class="text-muted small">Crafting pixel-perfect designs and writing clean, scalable code tailored to your brand.</p>
+        </div>
+
+        <div class="col-lg-1 col-12 text-center d-none d-lg-flex align-items-center justify-content-center">
+          <span class="process-arrow">&#8594;</span>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-12 text-center process-step" data-aos="fade-up" data-aos-delay="300">
+          <div class="process-icon-circle mx-auto mb-4">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <h5 class="font-weight-bold mb-3">Launch &amp; Grow</h5>
+          <p class="text-muted small">Deploying with zero downtime and optimizing for performance, SEO, and conversions.</p>
+        </div>
+
+      </div>
     </div>
   </section>
 
   <!-- ✅ Live Websites Delivered -->
-  <section class="live-websites py-5 creative-skew" id="live-websites">
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-lg-11 text-center mx-auto col-12">
+  <section class="live-websites py-5" id="live-websites">
+    <div class="container">
+      <div class="services-container shadow-lg" data-aos="fade-up">
 
-          <div class="col-lg-8 mx-auto mb-5 section-header">
-            <h2 class="mb-4">Recently Delivered Projects</h2>
-            <p class="text-muted mb-0">High-performance custom builds, optimized for results and speed.</p>
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-7">
+            <h2 class="font-weight-bold text-white mb-0" style="font-size: 2.5rem;">Let's Have a Look at<br><span style="color: var(--primary-color);">my Portfolio</span></h2>
           </div>
+          <div class="col-lg-5 text-lg-right mt-3 mt-lg-0">
+            <a href="#contact" class="portfolio-view-btn">
+              <span class="portfolio-view-icon"><i class="bi bi-arrow-up-right"></i></span>
+              <span class="portfolio-view-text">Let's Talk About Your Project</span>
+            </a>
+          </div>
+        </div>
 
-          <div class="row">
+        <div class="row">
 
             <!-- Card 1 -->
             <div class="col-lg-6 col-12 mb-5" data-aos="fade-up" data-aos-delay="100">
@@ -267,18 +410,74 @@
               </div>
             </div>
 
-          </div><!-- /row -->
+        </div>
 
-          <div class="row mt-5" data-aos="fade-up">
-            <div class="col-12 text-center">
-              <p class="mb-4">Want to see more of my work or discuss a specific project?</p>
-              <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link py-3 px-5">
-                Let's Talk About Your Project
-              </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Work Experience -->
+  <section class="edu-work py-5" id="edu-work">
+    <div class="container py-4">
+
+      <div class="col-lg-8 mx-auto text-center mb-5 section-header" data-aos="fade-up">
+        <h2 class="mb-4">My Education &amp; <span style="color: var(--primary-color);">Work Experience</span></h2>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Education Column -->
+        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+          <h5 class="edu-work-col-title">Education</h5>
+          <hr class="edu-work-divider">
+
+          <div class="edu-work-entry">
+            <div class="d-flex justify-content-between align-items-start">
+              <strong class="edu-work-name">Franklin University</strong>
+              <span class="edu-work-badge">2020 – 2024</span>
             </div>
+            <p class="edu-work-sub">Master of Science in IT</p>
           </div>
 
+          <div class="edu-work-entry">
+            <div class="d-flex justify-content-between align-items-start">
+              <strong class="edu-work-name">Franklin University</strong>
+              <span class="edu-work-badge">2017 – 2020</span>
+            </div>
+            <p class="edu-work-sub">Bachelor of Science in Computer Science</p>
+          </div>
         </div>
+
+        <!-- Work Experience Column -->
+        <div class="col-lg-6 col-12">
+          <h5 class="edu-work-col-title">Work Experience</h5>
+          <hr class="edu-work-divider">
+
+          <div class="edu-work-entry">
+            <div class="d-flex justify-content-between align-items-start">
+              <strong class="edu-work-name">Uniqcli</strong>
+              <span class="edu-work-badge">2024 – Present</span>
+            </div>
+            <p class="edu-work-sub">Web Developer</p>
+          </div>
+
+          <div class="edu-work-entry">
+            <div class="d-flex justify-content-between align-items-start">
+              <strong class="edu-work-name">Rumzer LLC</strong>
+              <span class="edu-work-badge">2023 – 2025</span>
+            </div>
+            <p class="edu-work-sub">Software Developer</p>
+          </div>
+
+          <div class="edu-work-entry">
+            <div class="d-flex justify-content-between align-items-start">
+              <strong class="edu-work-name">Apisero Inc.</strong>
+              <span class="edu-work-badge">2021 – 2023</span>
+            </div>
+            <p class="edu-work-sub">IT Consultant</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -289,49 +488,11 @@
       <div class="row">
         <div class="col-lg-11 text-center mx-auto col-12">
           <div class="col-lg-8 mx-auto mb-5 section-header">
-            <h2 class="mb-4">Digital Showcases</h2>
+            <h2 class="font-weight-bold mb-4" style="font-size: 2.5rem;">A Glimpse of <span style="color: var(--primary-color);">My Work</span></h2>
             <p class="text-muted">A collection of custom-built applications, API integrations, and technical solutions.</p>
           </div>
 
           <div class="owl-carousel owl-theme project-carousel">
-            
-            <div class="item">
-              <div class="project-card-v2">
-                <div class="project-card-video">
-                  <video class="img-fluid" poster="images/project/project-05.png" autoplay loop muted playsinline preload="none">
-                    <source src="images/project/project-05.mov" type="video/quicktime">
-                  </video>
-                  <div class="project-card-overlay">
-                    <a href="https://shop21apparel.myshopify.com/" target="_blank" rel="noopener" class="btn custom-btn-pill">
-                      View Demo <i class="bi bi-arrow-up-right ml-1"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="project-card-info">
-                  <span class="badge badge-pill badge-light mb-2">Shopify / Liquid</span>
-                  <h4>Shopify ECommerce</h4>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="project-card-v2">
-                <div class="project-card-video">
-                  <video class="img-fluid" poster="images/project/project-06.png" autoplay loop muted playsinline preload="none">
-                    <source src="images/project/project-06.mov" type="video/quicktime">
-                  </video>
-                  <div class="project-card-overlay">
-                    <a href="#" target="_blank" rel="noopener" class="btn custom-btn-pill">
-                      View Demo <i class="bi bi-arrow-up-right ml-1"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="project-card-info">
-                  <span class="badge badge-pill badge-light mb-2">OpenAI / React</span>
-                  <h4>AI-Powered Chat</h4>
-                </div>
-              </div>
-            </div>
 
             <div class="item">
               <div class="project-card-v2">
@@ -374,6 +535,45 @@
             <div class="item">
               <div class="project-card-v2">
                 <div class="project-card-video">
+                  <video class="img-fluid" poster="images/project/project-05.png" autoplay loop muted playsinline preload="none">
+                    <source src="images/project/project-05.mov" type="video/quicktime">
+                  </video>
+                  <div class="project-card-overlay">
+                    <a href="https://shop21apparel.myshopify.com/" target="_blank" rel="noopener" class="btn custom-btn-pill">
+                      View Demo <i class="bi bi-arrow-up-right ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card-info">
+                  <span class="badge badge-pill badge-light mb-2">Shopify / Liquid</span>
+                  <h4>Shopify ECommerce</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="project-card-v2">
+                <div class="project-card-video">
+                  <video class="img-fluid" poster="images/project/project-06.png" autoplay loop muted playsinline preload="none">
+                    <source src="images/project/project-06.mov" type="video/quicktime">
+                  </video>
+                  <div class="project-card-overlay">
+                    <a href="#" target="_blank" rel="noopener" class="btn custom-btn-pill">
+                      View Demo <i class="bi bi-arrow-up-right ml-1"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="project-card-info">
+                  <span class="badge badge-pill badge-light mb-2">OpenAI / React</span>
+                  <h4>AI-Powered Chat</h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hidden: Real-Time Messenger
+            <div class="item">
+              <div class="project-card-v2">
+                <div class="project-card-video">
                   <video class="img-fluid" autoplay loop muted playsinline preload="none">
                     <source src="images/project/project-03.mov" type="video/quicktime">
                   </video>
@@ -389,7 +589,9 @@
                 </div>
               </div>
             </div>
+            -->
 
+            <!-- Hidden: UI Clone
             <div class="item">
               <div class="project-card-v2">
                 <div class="project-card-video">
@@ -408,206 +610,90 @@
                 </div>
               </div>
             </div>
-          </div>
+            -->
+          </div><!-- /owl-carousel -->
 
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- resume -->
-  <section class="resume py-5" id="resume">
-    <div class="container py-5">
-      
-      <!-- Row 1: Experience -->
-      <div class="row mb-5">
-        <div class="col-lg-10 col-12 mx-auto">
-          <div class="section-header mb-5">
-            <h2 class="mb-4">Professional Journey</h2>
-            <p class="text-muted">A timeline of my growth and contributions in the tech ecosystem.</p>
-          </div>
-
-          <div class="timeline">
-            <div class="timeline-wrapper" data-aos="fade-up" data-aos-delay="100">
-              <div class="timeline-yr">
-                <span>Present</span>
-              </div>
-              <div class="timeline-info">
-                <h3>Web Developer <span class="badge badge-pill badge-warning ml-2" style="font-size: 0.6em; vertical-align: middle;">Current</span></h3>
-                <small>Uniqcli</small>
-                <div class="timeline-details mt-3">
-                  <p>&#8226; Developed custom WordPress themes using PHP, JavaScript, and ACF for dynamic, database driven content.</p>
-                  <p>&#8226; Improved technical SEO and Core Web Vitals, increasing organic traffic by 75%.</p>
-                  <p>&#8226; Integrated REST APIs, HubSpot tools, Airtable, and third party services to automate workflows.</p>
-                  <p>&#8226; Led website migrations and end to end deployments ensuring zero downtime.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper" data-aos="fade-up" data-aos-delay="200">
-              <div class="timeline-yr">
-                <span>2025</span>
-              </div>
-              <div class="timeline-info">
-                <h3>Software Developer</h3>
-                <small>Rumzer LLC</small>
-                <div class="timeline-details mt-3">
-                  <p>&#8226; Migrated a large scale web application from 11ty and Bootstrap to Angular and Tailwind CSS.</p>
-                  <p>&#8226; Built reusable UI components and optimized layouts for scalability.</p>
-                  <p>&#8226; Developed API driven interfaces and improved page load speed through asset reduction.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-wrapper" data-aos="fade-up" data-aos-delay="300">
-              <div class="timeline-yr">
-                <span>2021</span>
-              </div>
-              <div class="timeline-info">
-                <h3>IT Consultant</h3>
-                <small>Apisero Inc.</small>
-                <div class="timeline-details mt-3">
-                  <p>&#8226; Built enterprise level WordPress and Shopify solutions including custom themes and Liquid templates.</p>
-                  <p>&#8226; Integrated Shopify REST and GraphQL APIs for dynamic product rendering.</p>
-                  <p>&#8226; Translated Figma designs into responsive, production ready interfaces.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row 2: Education & Technical Proficiency -->
-      <div class="row mt-5">
-        <div class="col-lg-10 col-12 mx-auto">
-          <div class="row align-items-stretch">
-            
-            <!-- Education Box -->
-            <div class="col-lg-5 col-12 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-              <div class="resume-side-block h-100">
-                <div class="section-header mb-4">
-                  <h2 class="h4 mb-0">Education</h2>
-                </div>
-                <div class="education-card p-4 h-100" style="background: var(--white); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); border: 1px solid rgba(0,0,0,0.02);">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="edu-icon mr-3" style="width: 45px; height: 55px; background: rgba(255,194,0,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary-color);">
-                      <i class="bi bi-mortarboard-fill" style="font-size: 1.5rem;"></i>
-                    </div>
-                    <div>
-                      <h4 class="mb-0" style="font-size: 1.1rem;">Franklin University</h4>
-                      <small class="text-muted">Master of Science in IT</small>
-                    </div>
-                  </div>
-                  <p class="text-muted mb-0">Specialized in Database Management, Web Deployment, and Information Assurance.</p>
-                  <div class="mt-3 pt-3 border-top">
-                    <small class="font-weight-bold">Columbus, OH • Class of 2024</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Skills Box -->
-            <div class="col-lg-7 col-12" data-aos="fade-up" data-aos-delay="200">
-              <div class="resume-side-block h-100">
-                <div class="section-header mb-4">
-                  <h2 class="h4 mb-0">Technical Proficiency</h2>
-                </div>
-                <div class="skill-stack-mini p-4 h-100" style="background: #f9f9fb; border-radius: 20px; border: 1px solid rgba(0,0,0,0.02);">
-                  <div class="skill-tags d-flex flex-wrap mb-4">
-                    <div class="skill-tag-item mr-3 mb-2 small font-weight-bold"><i class="bi bi-check2-circle text-warning mr-1"></i> WordPress</div>
-                    <div class="skill-tag-item mr-3 mb-2 small font-weight-bold"><i class="bi bi-check2-circle text-warning mr-1"></i> React/Angular</div>
-                    <div class="skill-tag-item mr-3 mb-2 small font-weight-bold"><i class="bi bi-check2-circle text-warning mr-1"></i> PHP/Liquid</div>
-                    <div class="skill-tag-item mr-3 mb-2 small font-weight-bold"><i class="bi bi-check2-circle text-warning mr-1"></i> REST & GraphQL</div>
-                    <div class="skill-tag-item mr-3 mb-2 small font-weight-bold"><i class="bi bi-check2-circle text-warning mr-1"></i> SEO Optimization</div>
-                  </div>
-                  
-                  <div class="d-flex flex-wrap">
-                    <span class="badge badge-white shadow-sm p-3 m-1" style="border-radius: 12px; font-weight: 600; background: #fff;">Custom Themes</span>
-                    <span class="badge badge-white shadow-sm p-3 m-1" style="border-radius: 12px; font-weight: 600; background: #fff;">API Integration</span>
-                    <span class="badge badge-white shadow-sm p-3 m-1" style="border-radius: 12px; font-weight: 600; background: #fff;">Core Web Vitals</span>
-                    <span class="badge badge-white shadow-sm p-3 m-1" style="border-radius: 12px; font-weight: 600; background: #fff;">E-Commerce</span>
-                    <span class="badge badge-white shadow-sm p-3 m-1" style="border-radius: 12px; font-weight: 600; background: #fff;">Figma to Code</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <!-- articles -->
   <section class="articles py-5" id="articles">
     <div class="container py-5">
+
+      <!-- Section Header Row -->
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-7 col-12" data-aos="fade-right">
+          <h2 class="font-weight-bold mb-0" style="font-size: 2.5rem;">From <span style="color: var(--primary-color);">My</span><br><span style="color: var(--primary-color);">Blog</span> Post</h2>
+        </div>
+        <div class="col-lg-5 col-12 text-lg-right mt-3 mt-lg-0" data-aos="fade-left">
+          <a href="blog/index.html" class="hero-btn-primary">
+            <span class="btn-play-icon"><i class="bi bi-arrow-up-right"></i></span>
+            <span class="btn-text">View All Blogs</span>
+          </a>
+        </div>
+      </div>
+
       <div class="row">
-        <div class="col-lg-12 text-center mx-auto col-12">
-          <div class="col-lg-8 mx-auto mb-5 section-header">
-            <h2 class="mb-4">Developer Insights</h2>
-            <p class="text-muted">Strategies for building high-growth digital platforms and optimizing business performance.</p>
-          </div>
 
-          <div class="row">
-            <!-- Article 1: Maintenance Plan (Latest) -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="article-card shadow-sm h-100">
-                <div class="article-icon-box">
-                  <i class="bi bi-calendar-check text-warning"></i>
-                </div>
-                <div class="article-content text-left p-4">
-                  <small class="text-warning font-weight-bold mb-2 d-block">Maintenance</small>
-                  <h4 class="mb-3">WordPress Maintenance Plan (2026 Guide)</h4>
-                  <p class="text-muted mb-4 small">A practical daily, weekly, and monthly breakdown to keep your business site secure and fast.</p>
-                  <a href="blog/wordpress-maintenance-plan.html" class="read-more">
-                    Read Article <i class="bi bi-arrow-right ml-2"></i>
-                  </a>
-                </div>
-              </div>
+        <!-- Article 1: Maintenance Plan -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="article-card-v2">
+            <div class="article-feat-img">
+              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&fit=crop&q=70" alt="WordPress Maintenance" loading="lazy">
             </div>
-
-            <!-- Article 2: SEO Checklist -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="article-card shadow-sm h-100">
-                <div class="article-icon-box">
-                  <i class="bi bi-search text-warning"></i>
-                </div>
-                <div class="article-content text-left p-4">
-                  <small class="text-warning font-weight-bold mb-2 d-block">SEO & Visibility</small>
-                  <h4 class="mb-3">WordPress SEO Checklist for 2026</h4>
-                  <p class="text-muted mb-4 small">How to optimize your site for traffic, leads, and modern AI-driven search environments.</p>
-                  <a href="blog/wordpress-seo-checklist.html" class="read-more">
-                    Read Article <i class="bi bi-arrow-right ml-2"></i>
-                  </a>
-                </div>
+            <div class="article-card-body">
+              <h5 class="article-card-title">WordPress Maintenance Plan (2026 Guide)</h5>
+              <div class="article-meta">
+                <span class="meta-dot"></span>
+                <span>Pranjali Sachan</span>
+                <span class="meta-dot"></span>
+                <span>Apr 2026</span>
               </div>
+              <a href="blog/wordpress-maintenance-plan.html" class="article-read-link">Read Article <i class="bi bi-arrow-right ml-1"></i></a>
             </div>
-
-            <!-- Article 3: Migration -->
-            <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="article-card shadow-sm h-100">
-                <div class="article-icon-box">
-                  <i class="bi bi-box-arrow-right text-warning"></i>
-                </div>
-                <div class="article-content text-left p-4">
-                  <small class="text-warning font-weight-bold mb-2 d-block">Migration</small>
-                  <h4 class="mb-3">Migrate WordPress Without Downtime</h4>
-                  <p class="text-muted mb-4 small">A complete step-by-step guide for safely moving your WordPress site between servers or domains.</p>
-                  <a href="blog/wordpress-migration-guide.html" class="read-more">
-                    Read Article <i class="bi bi-arrow-right ml-2"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-5">
-            <a href="blog/index.html" class="btn custom-btn custom-btn-bg custom-btn-link py-3 px-5">
-              Browse All Articles
-            </a>
           </div>
         </div>
+
+        <!-- Article 2: SEO Checklist -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="article-card-v2">
+            <div class="article-feat-img">
+              <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&fit=crop&q=70" alt="SEO Strategy" loading="lazy">
+            </div>
+            <div class="article-card-body">
+              <h5 class="article-card-title">WordPress SEO Checklist for 2026</h5>
+              <div class="article-meta">
+                <span class="meta-dot"></span>
+                <span>Pranjali Sachan</span>
+                <span class="meta-dot"></span>
+                <span>Mar 2026</span>
+              </div>
+              <a href="blog/wordpress-seo-checklist.html" class="article-read-link">Read Article <i class="bi bi-arrow-right ml-1"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3: Migration -->
+        <div class="col-lg-4 col-md-6 col-12 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="article-card-v2">
+            <div class="article-feat-img">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&fit=crop&q=70" alt="WordPress Migration" loading="lazy">
+            </div>
+            <div class="article-card-body">
+              <h5 class="article-card-title">Migrate WordPress Without Downtime</h5>
+              <div class="article-meta">
+                <span class="meta-dot"></span>
+                <span>Pranjali Sachan</span>
+                <span class="meta-dot"></span>
+                <span>Feb 2026</span>
+              </div>
+              <a href="blog/wordpress-migration-guide.html" class="article-read-link">Read Article <i class="bi bi-arrow-right ml-1"></i></a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -616,72 +702,78 @@
   <section class="contact py-5 mt-5" id="contact">
     <div class="container">
       <div class="row align-items-center">
-        
+
+        <!-- Left: Info -->
         <div class="col-lg-5 col-12 mb-5 mb-lg-0" data-aos="fade-right">
           <div class="contact-content">
-            <h2 class="mb-4">Let's build something <span class="text-warning">extraordinary</span></h2>
-            <p class="mb-5">Whether you have a specific project in mind or just want to explore possibilities, I'm here to help you scale your digital presence.</p>
-            
-            <div class="contact-method mb-4 d-flex align-items-center">
-              <div class="icon-box mr-3">
-                <i class="bi bi-geo-alt-fill"></i>
-              </div>
-              <div class="method-text">
-                <small class="text-muted d-block">Location</small>
-                <strong>Pittsburgh, Pennsylvania</strong>
-              </div>
+            <h2 class="mb-4">Let's <span style="color: var(--primary-color);">Connect</span> &amp;<br><span style="color: var(--primary-color);">Collaborate</span></h2>
+            <p class="mb-5">Ready to bring your vision to life? Whether it's a new site, a redesign, or ongoing support — let's make it happen.</p>
+
+            <div class="contact-method mb-3 d-flex align-items-center">
+              <div class="contact-icon-circle mr-3"><i class="bi bi-envelope-fill"></i></div>
+              <span>pranjalisachan98@gmail.com</span>
             </div>
 
-            <div class="social-box mt-5">
-              <h5 class="mb-3">Connect Socially</h5>
-              <ul class="social-links d-flex flex-row justify-content-start">
-                <li class="mr-3">
-                  <a href="https://www.linkedin.com/in/pranjalisachan" target="_blank" title="LinkedIn" rel="noopener">
-                    <i class="bi bi-linkedin"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.github.com/PranjaliSachan" target="_blank" title="Github" rel="noopener">
-                    <i class="bi bi-github"></i>
-                  </a>
-                </li>
-              </ul>
+            <div class="contact-method mb-3 d-flex align-items-center">
+              <div class="contact-icon-circle mr-3"><i class="bi bi-github"></i></div>
+              <a href="https://www.github.com/PranjaliSachan" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">github.com/PranjaliSachan</a>
+            </div>
+
+            <div class="contact-method mb-3 d-flex align-items-center">
+              <div class="contact-icon-circle mr-3"><i class="bi bi-linkedin"></i></div>
+              <a href="https://www.linkedin.com/in/pranjalisachan" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">linkedin.com/in/pranjalisachan</a>
+            </div>
+
+            <div class="contact-method mb-3 d-flex align-items-center">
+              <div class="contact-icon-circle mr-3"><i class="bi bi-geo-alt-fill"></i></div>
+              <span>Pittsburgh, Pennsylvania</span>
             </div>
           </div>
         </div>
 
+        <!-- Right: Form -->
         <div class="col-lg-7 col-12" data-aos="fade-left">
-          <div class="contact-form-wrapper">
-            <div class="contact-form">
-              <h3 class="mb-4">Send a Message</h3>
-              <form name="contact-form-netlify" method="POST" action="/success.html" data-netlify="true">
-                <div class="row">
-                  <div class="col-lg-6 col-12">
-                    <div class="form-group mb-4">
-                      <label class="small font-weight-bold">Your Name</label>
-                      <input id="name" type="text" class="form-control shadow-none" name="name" placeholder="John Doe" required>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-12">
-                    <div class="form-group mb-4">
-                      <label class="small font-weight-bold">Email Address</label>
-                      <input id="email" type="email" class="form-control shadow-none" name="email" placeholder="john@example.com" required>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group mb-4">
-                      <label class="small font-weight-bold">Message</label>
-                      <textarea id="message" name="message" rows="5" class="form-control shadow-none" placeholder="Tell me about your project..." required></textarea>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="submit-btn w-100 py-3">
-                      Start Conversation <i class="bi bi-send-fill ml-2"></i>
-                    </button>
+          <div class="contact-form-card">
+            <form name="contact-form-netlify" method="POST" action="/success.html" data-netlify="true">
+              <div class="row">
+                <div class="col-lg-6 col-12">
+                  <div class="form-group mb-3">
+                    <input type="text" class="form-control contact-input shadow-none" name="first_name" placeholder="First Name *" required>
                   </div>
                 </div>
-              </form>
-            </div>
+                <div class="col-lg-6 col-12">
+                  <div class="form-group mb-3">
+                    <input type="text" class="form-control contact-input shadow-none" name="last_name" placeholder="Last Name *" required>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <div class="form-group mb-3">
+                    <input type="email" class="form-control contact-input shadow-none" name="email" placeholder="Email *" required>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <div class="form-group mb-3">
+                    <input type="tel" class="form-control contact-input shadow-none" name="phone" placeholder="Phone Number *">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-3">
+                    <input type="text" class="form-control contact-input shadow-none" name="subject" placeholder="Subject *" required>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group mb-4">
+                    <textarea name="message" rows="5" class="form-control contact-input shadow-none" placeholder="Message *" required></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="hero-btn-primary contact-submit-btn">
+                    <span class="btn-play-icon"><i class="bi bi-arrow-up-right"></i></span>
+                    <span class="btn-text">Send Message</span>
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
 

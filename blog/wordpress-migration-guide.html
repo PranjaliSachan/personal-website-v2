@@ -17,7 +17,7 @@
     }
     .blog-header {
       padding: 80px 0 40px;
-      background: #f9f9fb;
+      background: transparent;
     }
     .blog-container {
       max-width: 800px;
@@ -36,13 +36,16 @@
       font-size: 1.6rem;
       margin-top: 2.5rem;
       margin-bottom: 1rem;
-      color: var(--p-color);
+      color: #1a1a1a;
+      font-weight: 700;
     }
+    .blog-content h2::after { display: none !important; }
     .blog-content h3 {
       font-size: 1.3rem;
       margin-top: 2rem;
       margin-bottom: 1rem;
-      color: var(--p-color);
+      color: #1a1a1a;
+      font-weight: 700;
     }
     .blog-content ul {
         margin-bottom: 1.5rem;
@@ -95,9 +98,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <div class="color-mode d-lg-flex justify-content-center align-items-center">
-              <i class="color-mode-icon"></i>
-            </div>
+            <a href="index.html" class="nav-link">Blog Hub</a>
           </li>
         </ul>
       </div>
@@ -170,7 +171,10 @@
         <div class="bg-light p-4 rounded mt-5 border-left border-warning" style="border-width: 4px !important;">
           <h4 class="mb-3">Planning a Migration?</h4>
           <p class="mb-3">If you’re planning a WordPress migration or facing issues with an ongoing move, feel free to reach out. I’m happy to review your setup and suggest a safe migration plan that avoids downtime and protects your SEO.</p>
-          <a href="../index.html#contact" class="btn custom-btn custom-btn-bg py-2 px-4 shadow-sm">Plan Your Migration</a>
+          <a href="../index.html#contact" class="hero-btn-primary mt-3" style="display:inline-flex;">
+            <span class="btn-play-icon"><i class="bi bi-arrow-up-right"></i></span>
+            <span class="btn-text">Plan Your Migration</span>
+          </a>
         </div>
       </div>
     </div>

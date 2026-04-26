@@ -19,25 +19,20 @@
   });
 
   // PROJECT CAROUSEL
-  $('.project-carousel').owlCarousel({
-    items: 1,
+  var $owl = $('.project-carousel');
+  $owl.owlCarousel({
     loop: true,
     margin: 30,
-    nav: true,
+    nav: false,
     dots: true,
-    navText: ["<span><i class='uil uil-angle-left-b'></i></span>", "<span><i class='uil uil-angle-right-b'></i></span>"],
     responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      1024: {
-        items: 2
-      }
+      0: { items: 1 },
+      768: { items: 2 },
+      1024: { items: 2 }
     }
   });
+
+
 
   // SMOOTHSCROLL
   $(function () {

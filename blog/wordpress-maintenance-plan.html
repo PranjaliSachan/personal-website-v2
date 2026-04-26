@@ -18,7 +18,7 @@
         }
         .blog-header {
             padding: 80px 0 40px;
-            background: #f9f9fb;
+            background: transparent;
         }
         .blog-container {
             max-width: 800px;
@@ -37,13 +37,16 @@
             font-size: 1.6rem;
             margin-top: 2.5rem;
             margin-bottom: 1rem;
-            color: var(--p-color);
+            color: #1a1a1a;
+            font-weight: 700;
         }
+        .blog-content h2::after { display: none !important; }
         .blog-content h3 {
             font-size: 1.3rem;
             margin-top: 2rem;
             margin-bottom: 1rem;
-            color: var(--p-color);
+            color: #1a1a1a;
+            font-weight: 700;
         }
         .blog-content ul, .blog-content ol {
             margin-bottom: 1.5rem;
@@ -81,7 +84,7 @@
             transform: translateX(-5px);
         }
         .cta-box {
-            background: #f8f9fa;
+            background: #f2e9dd;
             border-left: 5px solid var(--primary-color);
             padding: 40px;
             border-radius: 10px;
@@ -105,11 +108,6 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Blog Hub</a>
-                    </li>
-                    <li class="nav-item ml-lg-4">
-                        <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                            <i class="color-mode-icon"></i>
-                        </div>
                     </li>
                 </ul>
             </div>
@@ -186,7 +184,10 @@
                         <p>WordPress maintenance is not optional. It is essential for security, performance, and long-term stability. A structured plan reduces risks and keeps your site running as a reliable growth engine for your business.</p>
                         <p class="font-weight-bold mt-4">Need help setting up a professional maintenance system?</p>
                         <p>I’m happy to review your current setup and suggest a practical maintenance plan tailored to your site’s specific needs.</p>
-                        <a href="../index.html#contact" class="btn custom-btn custom-btn-bg py-3 px-5 shadow-sm mt-3">Get a Free Maintenance Review</a>
+                        <a href="../index.html#contact" class="hero-btn-primary mt-3" style="display:inline-flex;">
+                            <span class="btn-play-icon"><i class="bi bi-arrow-up-right"></i></span>
+                            <span class="btn-text">Get a Free Maintenance Review</span>
+                        </a>
                     </div>
 
                 </div>
