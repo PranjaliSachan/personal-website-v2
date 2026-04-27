@@ -30,17 +30,25 @@
       transform: translateY(-8px);
       box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important;
     }
-    .blog-hub-icon {
-      width: 52px;
-      height: 52px;
-      background: rgba(216, 96, 39, 0.1);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      margin-bottom: 16px;
-      color: var(--primary-color);
+    .blog-hub-img {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 20px 20px 0 0;
+    }
+    .blog-hub-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      filter: grayscale(100%);
+    }
+    .blog-hub-card:hover .blog-hub-img img {
+      transform: scale(1.05);
+      filter: grayscale(0%);
+    }
+    .blog-hub-card-body {
+      padding: 1.5rem;
     }
     .blog-hub-footer {
       background: transparent;
@@ -82,91 +90,103 @@
 
         <!-- Article 1: Maintenance Plan (Latest) -->
         <div class="col-lg-4 col-md-6 col-12 mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="blog-hub-card p-4 h-100 shadow-sm">
-            <div class="blog-hub-icon">
-              <i class="bi bi-calendar-check"></i>
+          <div class="blog-hub-card h-100 shadow-sm">
+            <div class="blog-hub-img">
+              <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&fit=crop&q=70" alt="WordPress Maintenance" loading="lazy">
             </div>
-            <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">Maintenance</small>
-            <h4 class="mb-3">WordPress Maintenance Plan (2026 Guide)</h4>
-            <p class="text-muted mb-4">A practical daily, weekly, and monthly breakdown to keep your business site secure and fast.</p>
-            <a href="wordpress-maintenance-plan.html" class="font-weight-bold" style="color: var(--primary-color);">
-              Read Guide <i class="bi bi-arrow-right ml-2"></i>
-            </a>
+            <div class="blog-hub-card-body">
+              <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">Maintenance</small>
+              <h4 class="mb-3">WordPress Maintenance Plan (2026 Guide)</h4>
+              <p class="text-muted mb-4">A practical daily, weekly, and monthly breakdown to keep your business site secure and fast.</p>
+              <a href="wordpress-maintenance-plan.html" class="font-weight-bold" style="color: var(--primary-color);">
+                Read Guide <i class="bi bi-arrow-right ml-2"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Article 2: SEO Checklist -->
         <div class="col-lg-4 col-md-6 col-12 mb-5" data-aos="fade-up" data-aos-delay="200">
-          <div class="blog-hub-card p-4 h-100 shadow-sm">
-            <div class="blog-hub-icon">
-              <i class="bi bi-search"></i>
+          <div class="blog-hub-card h-100 shadow-sm">
+            <div class="blog-hub-img">
+              <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&fit=crop&q=70" alt="WordPress SEO" loading="lazy">
             </div>
-            <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">SEO &amp; Visibility</small>
-            <h4 class="mb-3">WordPress SEO Checklist for 2026</h4>
-            <p class="text-muted mb-4">How to optimize your site for traffic, leads, and modern AI-driven search environments.</p>
-            <a href="wordpress-seo-checklist.html" class="font-weight-bold" style="color: var(--primary-color);">
-              Read Guide <i class="bi bi-arrow-right ml-2"></i>
-            </a>
+            <div class="blog-hub-card-body">
+              <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">SEO &amp; Visibility</small>
+              <h4 class="mb-3">WordPress SEO Checklist for 2026</h4>
+              <p class="text-muted mb-4">How to optimize your site for traffic, leads, and modern AI-driven search environments.</p>
+              <a href="wordpress-seo-checklist.html" class="font-weight-bold" style="color: var(--primary-color);">
+                Read Guide <i class="bi bi-arrow-right ml-2"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Article 3: Migration -->
         <div class="col-lg-4 col-md-6 col-12 mb-5" data-aos="fade-up" data-aos-delay="300">
-          <div class="blog-hub-card p-4 h-100 shadow-sm">
-            <div class="blog-hub-icon">
-              <i class="bi bi-box-arrow-right"></i>
+          <div class="blog-hub-card h-100 shadow-sm">
+            <div class="blog-hub-img">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&fit=crop&q=70" alt="WordPress Migration" loading="lazy">
             </div>
-            <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">Migration</small>
-            <h4 class="mb-3">Migrate WordPress Without Downtime</h4>
-            <p class="text-muted mb-4">A complete step-by-step guide for safely moving your WordPress site between servers or domains.</p>
-            <a href="wordpress-migration-guide.html" class="font-weight-bold" style="color: var(--primary-color);">
-              Read Guide <i class="bi bi-arrow-right ml-2"></i>
-            </a>
+            <div class="blog-hub-card-body">
+              <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">Migration</small>
+              <h4 class="mb-3">Migrate WordPress Without Downtime</h4>
+              <p class="text-muted mb-4">A complete step-by-step guide for safely moving your WordPress site between servers or domains.</p>
+              <a href="wordpress-migration-guide.html" class="font-weight-bold" style="color: var(--primary-color);">
+                Read Guide <i class="bi bi-arrow-right ml-2"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Article 4: Broken Site -->
         <div class="col-lg-4 col-md-6 col-12 mb-5" data-aos="fade-up" data-aos-delay="400">
-          <div class="blog-hub-card p-4 h-100 shadow-sm">
-            <div class="blog-hub-icon">
-              <i class="bi bi-tools"></i>
+          <div class="blog-hub-card h-100 shadow-sm">
+            <div class="blog-hub-img">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&fit=crop&q=70" alt="WordPress Update Fix" loading="lazy">
             </div>
-            <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">Maintenance</small>
-            <h4 class="mb-3">Broke After Update? Step-by-Step Fix</h4>
-            <p class="text-muted mb-4">How to recover from update errors and set up a maintenance workflow to prevent future downtime.</p>
-            <a href="wordpress-update-fix.html" class="font-weight-bold" style="color: var(--primary-color);">
-              Read Guide <i class="bi bi-arrow-right ml-2"></i>
-            </a>
+            <div class="blog-hub-card-body">
+              <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">Maintenance</small>
+              <h4 class="mb-3">Broke After Update? Step-by-Step Fix</h4>
+              <p class="text-muted mb-4">How to recover from update errors and set up a maintenance workflow to prevent future downtime.</p>
+              <a href="wordpress-update-fix.html" class="font-weight-bold" style="color: var(--primary-color);">
+                Read Guide <i class="bi bi-arrow-right ml-2"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Article 5: Speed Guide -->
         <div class="col-lg-4 col-md-6 col-12 mb-5" data-aos="fade-up" data-aos-delay="500">
-          <div class="blog-hub-card p-4 h-100 shadow-sm">
-            <div class="blog-hub-icon">
-              <i class="bi bi-lightning-charge"></i>
+          <div class="blog-hub-card h-100 shadow-sm">
+            <div class="blog-hub-img">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&fit=crop&q=70" alt="WordPress Speed" loading="lazy">
             </div>
-            <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">SEO &amp; Speed</small>
-            <h4 class="mb-3">WordPress Slow? 12 Proven Fixes</h4>
-            <p class="text-muted mb-4">A comprehensive 2026 guide to improving speed, Core Web Vitals, and organic search rankings.</p>
-            <a href="wordpress-speed-guide.html" class="font-weight-bold" style="color: var(--primary-color);">
-              Read Guide <i class="bi bi-arrow-right ml-2"></i>
-            </a>
+            <div class="blog-hub-card-body">
+              <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">SEO &amp; Speed</small>
+              <h4 class="mb-3">WordPress Slow? 12 Proven Fixes</h4>
+              <p class="text-muted mb-4">A comprehensive 2026 guide to improving speed, Core Web Vitals, and organic search rankings.</p>
+              <a href="wordpress-speed-guide.html" class="font-weight-bold" style="color: var(--primary-color);">
+                Read Guide <i class="bi bi-arrow-right ml-2"></i>
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- Article 6: Performance Fix -->
         <div class="col-lg-4 col-md-6 col-12 mb-5" data-aos="fade-up" data-aos-delay="600">
-          <div class="blog-hub-card p-4 h-100 shadow-sm">
-            <div class="blog-hub-icon">
-              <i class="bi bi-speedometer2"></i>
+          <div class="blog-hub-card h-100 shadow-sm">
+            <div class="blog-hub-img">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&fit=crop&q=70" alt="WordPress Performance" loading="lazy">
             </div>
-            <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">Performance</small>
-            <h4 class="mb-3">Why Most WordPress Sites Stay Slow</h4>
-            <p class="text-muted mb-4">A deep dive into the 5 silent killers of WordPress performance and how to fix them professionally.</p>
-            <a href="wordpress-performance-fix.html" class="font-weight-bold" style="color: var(--primary-color);">
-              Read Guide <i class="bi bi-arrow-right ml-2"></i>
-            </a>
+            <div class="blog-hub-card-body">
+              <small class="font-weight-bold mb-2 d-block text-uppercase" style="color: var(--primary-color); letter-spacing: 1px;">Performance</small>
+              <h4 class="mb-3">Why Most WordPress Sites Stay Slow</h4>
+              <p class="text-muted mb-4">A deep dive into the 5 silent killers of WordPress performance and how to fix them professionally.</p>
+              <a href="wordpress-performance-fix.html" class="font-weight-bold" style="color: var(--primary-color);">
+                Read Guide <i class="bi bi-arrow-right ml-2"></i>
+              </a>
+            </div>
           </div>
         </div>
 

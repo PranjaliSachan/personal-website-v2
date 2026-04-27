@@ -22,12 +22,12 @@
   var $owl = $('.project-carousel');
   $owl.owlCarousel({
     loop: true,
-    margin: 30,
+    margin: 24,
     nav: false,
     dots: true,
     responsive: {
-      0: { items: 1 },
-      768: { items: 2 },
+      0:    { items: 1 },
+      768:  { items: 2 },
       1024: { items: 2 }
     }
   });
