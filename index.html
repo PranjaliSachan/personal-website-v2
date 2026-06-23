@@ -186,7 +186,7 @@
           <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
             <div class="service-card">
               <h4>Web Development</h4>
-              <p>Custom WordPress architecture and full-stack solutions built for scale.</p>
+              <p>Custom WordPress, Next.js, and full-stack web solutions built for speed, scalability, and responsive user experiences.</p>
               <div class="service-img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&fit=crop&q=80'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
             </div>
           </div>
@@ -194,8 +194,8 @@
           <!-- Web Design (Active/Highlighted) -->
           <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
             <div class="service-card active">
-              <h4>SEO Strategy</h4>
-              <p>Technical SEO audits and AI-search optimization to drive organic growth.</p>
+              <h4>SEO + AI Visibility</h4>
+              <p>Technical SEO, schema, Core Web Vitals, LLM optimization, and AI-search visibility strategies to support organic growth.</p>
               <div class="service-img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&fit=crop&q=80'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
             </div>
           </div>
@@ -203,8 +203,8 @@
           <!-- App Design -->
           <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
             <div class="service-card">
-              <h4>Digital Ops</h4>
-              <p>Website management, maintenance plans, and performance monitoring.</p>
+              <h4>Headless CMS</h4>
+              <p>Headless CMS architecture with reusable content models, dynamic templates, and scalable publishing workflows.</p>
               <div class="service-img-placeholder" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&fit=crop&q=80'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
             </div>
           </div>
@@ -730,10 +730,17 @@
   <script src="js/custom.js?v=3"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-      offset: 100
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 0,
+        disable: false
+      });
+      // Refresh AOS to catch elements already in viewport on page load
+      setTimeout(function() {
+        AOS.refresh();
+      }, 100);
     });
   </script>
 
